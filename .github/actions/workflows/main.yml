@@ -1,11 +1,6 @@
 name: Build Angular core > 8 
 
-on:
-  push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
-
+on: [workflow_call]
 jobs:
   build:
     runs-on: ubuntu-latest
